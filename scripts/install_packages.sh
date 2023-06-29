@@ -36,7 +36,7 @@ if [[ $(prompt_user "Install general packages?: ") -eq 1 ]]; then
   done
 
   conda install numba; pip3 uninstall numba
-  pip3 install numpy<1.24 # obviously check version if packages update
+  pip3 install 'numpy<1.24' # obviously check version if packages update
 fi
 echo ""
 
